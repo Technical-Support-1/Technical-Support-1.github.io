@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Technical-Support-1.github.io</id>
     <title>Gridea</title>
-    <updated>2021-03-20T00:42:37.438Z</updated>
+    <updated>2021-03-20T00:47:03.770Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Technical-Support-1.github.io"/>
     <link rel="self" href="https://Technical-Support-1.github.io/atom.xml"/>
-    <subtitle>温故而知新0</subtitle>
+    <subtitle>温故而知新</subtitle>
     <logo>https://Technical-Support-1.github.io/images/avatar.png</logo>
     <icon>https://Technical-Support-1.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
