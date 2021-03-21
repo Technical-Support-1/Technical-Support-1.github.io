@@ -12,10 +12,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://Technical-Support-1.github.io/favicon.ico?v=1616318039768">
+<link rel="shortcut icon" href="https://Technical-Support-1.github.io/favicon.ico?v=1616319278660">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://Technical-Support-1.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -30,7 +36,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://Technical-Support-1.github.io">
-        <img class="avatar" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616318039768" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616319278660" alt="" width="32px" height="32px">
       </a>
       <a href="https://Technical-Support-1.github.io">
         <h1 class="site-title">Technical Support——技术支持部门对外联络部</h1>
@@ -123,6 +129,12 @@
       </div>
 
       
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
 
       <div class="site-footer">
   <div class="slogan"><h3><b>“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！</b></h3></div>
@@ -156,6 +168,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '5a1007848cf31dca8b52',
+        clientSecret: 'ab14792f01685ff3a71e175cf002eb33710c5bf1',
+        repo: 'Technical-Support-1.github.io',
+        owner: 'Technical-Support-1',
+        admin: ['Technical-Support-1'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
