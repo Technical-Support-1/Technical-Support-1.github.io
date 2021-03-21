@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://Technical-Support-1.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://Technical-Support-1.github.io/styles/main.css">
     
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/dracula.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
     
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
@@ -47,17 +47,17 @@
     
     
     <script>
-        let shareChoice = false
+        let shareChoice = true
     </script>
     
     
     <script>
-        let donateChoice = false
+        let donateChoice = true
     </script>
     
     
     <script>
-        let searchChoice = false
+        let searchChoice = true
     </script>
     
     <script>let postsnum = 0;</script>
@@ -81,6 +81,116 @@
             </div>
         </div>
     </div>
+    
+    <div id=side>
+        <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
+                    src='https://Technical-Support-1.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
+        <div class="avatar-border">
+            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616323935426" class="avatar">
+        </div>
+        <div class="sitename">Technical Support——技术支持部门对外联络部</div>
+        <span class="describtion" data-text='["<h3><b>“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！</b></h3>"]'>&nbsp;</span>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
+        </div>
+        
+    <div class="share-button">
+        <span>社交按钮</span>
+        
+        
+        
+        
+        
+        
+    </div>
+    <div id="qq" style="display:none"></div>
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="https://Technical-Support-1.github.io" class="menubutton">
+            首页
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="/archives" class="menubutton">
+            归档
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="/tags" class="menubutton">
+            标签
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="https://Technical-Support-1.github.io/post/about" class="menubutton">
+            关于
+        </a>
+    </div>
+    
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="https://Technical-Support-1.github.io/friends" class="menubutton">友人帐</a>
+    </div>
+    
+    <hr>
+    <style>
+    .copyright {
+        font-size: 15px;
+        color: #d9d9d9;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        .foot {
+            width: 100%;
+            height: 130px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .foot {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="foot">
+        <div id="footinfo">Powered by Dr.Whiter | Gridea | Theme: <a
+                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+    </div>
+
+
+    <script src="https://Technical-Support-1.github.io/media/js/wordshow.js"></script>
     
     
 </body>
@@ -249,7 +359,7 @@
         let talkindex = 0;
         get();
         function get() {
-            var t = JSON.parse('');
+            var t = JSON.parse('[]');
             talkindex = t.length - 1;
             for (var i = 0; i <= t.length - 1; i++) {
                 var d = {};
@@ -281,7 +391,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616323637286">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616323935426">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -294,7 +404,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616323637286">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616323935426">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -643,7 +753,16 @@
     </script>
     </div>
                 
-                    <div class="mobilebar"><head>
+                <div id="tab1" class="tab">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close"></div>
+                </div>
+                <div class="col-md-1 col-lg-3"></div>
+                <div class="mobilebar"><head>
   <!-- 引入Bootstrap核心样式文件 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/bootstrap.min.css">
 </head>
@@ -737,6 +856,9 @@
         
         
           
+        <li><a data-pjax href="https://Technical-Support-1.github.io/friends">友链</a></li>
+
+        
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -772,35 +894,33 @@
       }
     }
   </script> </div>
-                        <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 topindex">
-                            <script>
-                                $(".tag").each(function () {
-                                    var rgb = '#' + Math.floor((Math.random()) * 0xffffff).toString(16);;
-                                    $(this).css('color', rgb);
-                                });
-                            </script>
-                            <div class="tagsbackgroundtop"></div>
-                            <div class="tags-container">
-                                
-                                <img class="tagsimg" src="" alt="">
-                                
+                    <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                        <script>
+                            $(".tag").each(function () {
+                                var rgb = '#' + Math.floor((Math.random()) * 0xffffff).toString(16);;
+                                $(this).css('color', rgb);
+                            });
+                        </script>
+                        <div class="tagsbackgroundleft"></div>
+                        <div class="tags-container">
+                            
+                            <img class="tagsimg" src="/media/images/tagimg.png" alt="">
+                            
                         
-                            </div>
-                            <div style="display: none;">
-                                
-                            </div>
                         </div>
-                        
+                    </div>
+                    <div class="col-lg-2"></div>
+                    
                 <div class="col-xs-6 col-sm-3"></div>
             </div>
             
         </div></div>
         <div id="bg">
         </div>
-        <div id="bgchoice" style="display: none">
+        <div id="bgchoice" style="display: none">default
                     </div>
                     
-                    <div id="bgurl" style="display:none"></div>
+                    <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
                        
     </div>
 
@@ -821,6 +941,16 @@
 </script>
 
 
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
+<script type="text/javascript" src="https://Technical-Support-1.github.io/media/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://Technical-Support-1.github.io/media/live2d/assets/tororo.model.json");
+</script>
+
 
 <script>
     var bgchoice = $('#bgchoice').html();
@@ -835,3 +965,5 @@
         aplayerbtnInit();
     }
 </script>
+
+<script src="https://Technical-Support-1.github.io/media/js/index.js"></script>
