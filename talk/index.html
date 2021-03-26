@@ -86,7 +86,7 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://Technical-Support-1.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616666626323" class="avatar">
+            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616754213611" class="avatar">
         </div>
         <div class="sitename">Technical Support——技术支持部门对外联络部</div>
         <span class="describtion" data-text='["“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！"]'>&nbsp;</span>
@@ -142,10 +142,6 @@
     
     
     
-    <div class="mchocie describtion">
-        <a data-pjax href="https://Technical-Support-1.github.io/friends" class="menubutton">友人帐</a>
-    </div>
-    
     <hr>
     <style>
     .copyright {
@@ -177,8 +173,18 @@
             </div>
             <div>
                 
+                <script async
+                    src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/busuanzi.pure.mini.js"></script>
+                <div id="vistornum" style="margin:0">
+                    <span id="busuanzi_container_site_uv">
+                        <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 总访问量:<span
+                            id="busuanzi_value_site_pv"></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <i class="fa fa-user-o" aria-hidden="true"></i> 访问人数:<span id="busuanzi_value_site_uv"></span>
+                    </span>
+                </div>
+                
             </div>
-            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020 - 2024
             </div>
         </div>
 
@@ -391,7 +397,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616666626323">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616754213611">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -404,7 +410,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616666626323">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616754213611">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -846,9 +852,6 @@
         
         
           
-        <li><a data-pjax href="https://Technical-Support-1.github.io/friends">友链</a></li>
-
-        
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -910,6 +913,69 @@
                 <div class="col-md-1 col-lg-2"></div>
                 
             </div>
+            
+                <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+</head>
+
+<body>
+    <div class="miniMode">
+        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
+        </meting-js>
+    </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+    function aplayerInit() {
+        var aplayerid = "https://www.kugou.com/yy/special/single/1933476.html";
+        var aplayerserver = "kugou";
+        var aplayerorder = "default";
+        var aplayerautoplay = "false";
+        var aplayer = $("#myaplayer");
+        aplayer.attr("server", aplayerserver);
+        aplayer.attr("id", aplayerid);
+        aplayer.attr("order", aplayerorder);
+        if (aplayerautoplay == "true")
+            aplayer.attr("autoplay", "true");
+    }
+    aplayerInit();
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<script>
+    function aplayerbtnInit() {
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        if(player==undefined)return false;
+        player.lrc.hide();
+        var mbabtn = $("#mbaplayer");
+        if (player.paused == false) {
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        } else {
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+
+    function aplayerPlay() {
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        var mbabtn = $("#mbaplayer");
+        if (player.paused == true) {
+            player.play();
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        } else {
+            player.pause();
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+</script>
             
         </div>
         <div id="bg">
@@ -994,7 +1060,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616666626323">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616754213611">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -1007,7 +1073,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616666626323">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616754213611">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
