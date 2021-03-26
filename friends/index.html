@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://Technical-Support-1.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://Technical-Support-1.github.io/styles/main.css">
     
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/dracula.min.css">
     
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
@@ -46,17 +46,17 @@
     
     
     <script>
-        let shareChoice = true
+        let shareChoice = false
     </script>
     
     
     <script>
-        let donateChoice = true
+        let donateChoice = false
     </script>
     
     
     <script>
-        let searchChoice = true
+        let searchChoice = false
     </script>
     
     <script>let postsnum = 0;</script>
@@ -80,126 +80,6 @@
             </div>
         </div>
     </div>
-    
-    <div id=side>
-        <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
-                    src='https://Technical-Support-1.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
-        <div class="avatar-border">
-            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616755520337" class="avatar">
-        </div>
-        <div class="sitename">Technical Support——技术支持部门对外联络部</div>
-        <span class="describtion" data-text='["“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！"]'>&nbsp;</span>
-        
-        <div class="search">
-            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
-            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
-            <div class="search-results"></div>
-        </div>
-        
-    <div class="share-button">
-        <span>社交按钮</span>
-        
-        
-        
-        
-        
-        
-    </div>
-    <div id="qq" style="display:none"></div>
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="https://Technical-Support-1.github.io" class="menubutton">
-            首页
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="/archives" class="menubutton">
-            归档
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="/tags" class="menubutton">
-            标签
-        </a>
-    </div>
-    
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="https://Technical-Support-1.github.io/post/about" class="menubutton">
-            关于
-        </a>
-    </div>
-    
-    
-    
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="https://Technical-Support-1.github.io/friends" class="menubutton">友人帐</a>
-    </div>
-    
-    <hr>
-    <style>
-    .copyright {
-        font-size: 15px;
-        color: #d9d9d9;
-    }
-
-
-    @media screen and (min-width: 1200px) {
-        .foot {
-            width: 100%;
-            height: 130px;
-        }
-    }
-
-    @media screen and (max-width: 1200px) {
-        .foot {
-            display: none;
-        }
-    }
-</style>
-
-<body>
-    <div class="foot">
-        <div id="footinfo">Powered by Dr.Writer | Gridea | Theme: <a
-                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
-            <div>
-                
-            </div>
-            <div>
-                
-                <script async
-                    src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/busuanzi.pure.mini.js"></script>
-                <div id="vistornum" style="margin:0">
-                    <span id="busuanzi_container_site_uv">
-                        <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 总访问量:<span
-                            id="busuanzi_value_site_pv"></span>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <i class="fa fa-user-o" aria-hidden="true"></i> 访问人数:<span id="busuanzi_value_site_uv"></span>
-                    </span>
-                </div>
-                
-            </div>
-            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020 - 2024
-            </div>
-        </div>
-
-
-
-    </div>
-</body>
-
-    </div>
-
-
-    <script src="https://Technical-Support-1.github.io/media/js/wordshow.js"></script>
     
     
 </body>
@@ -368,7 +248,7 @@
         let talkindex = 0;
         get();
         function get() {
-            var t = JSON.parse('[]');
+            var t = JSON.parse('');
             talkindex = t.length - 1;
             for (var i = 0; i <= t.length - 1; i++) {
                 var d = {};
@@ -400,7 +280,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616755520337">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616764816361">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -413,7 +293,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616755520337">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616764816361">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -855,9 +735,6 @@
         
         
           
-        <li><a data-pjax href="https://Technical-Support-1.github.io/friends">友链</a></li>
-
-        
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -895,51 +772,29 @@
   </script> 
                 </div>
                 
-                <div id="tab1" class="tab">
-                    <div class="bars">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="close"></div>
-                </div>
-                <div class="col-md-1 col-lg-3"></div>
-                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                <div class="col-md-2 col-lg-3"></div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 posttop">
                     <body>
     <div id="friendscontainermobile">
-        
-        
-        <div class="friend-box" onclick="window.location.href= '';return false">
-            <img class="friend-avatar" src="">
-            <div class="flink-info">
-                <a href="" class="title" target="_blank"></a>
-                <div style="margin-top:10px"></div>
-                <p></p>
-            </div>
-        </div>
-        
         
     </div>
 
     <div id="friendscontainer">
         
-        
-        <div class="background" onclick="window.open('');return false">
-            <div class="infoForm">
-                <img class="favatar" src="">
-                <h2></h2>
-                <h3></h3>
-            </div>
-        </div>
-        
-        
     </div>
 </body>
-                <div id="comment" class="fcl" style="background: white;">
-                    <div class="commentcontainer">
-                        
-                        
-                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                    <div class="tog">
+                        <div class="toggleContainer">
+                            <div class="toggle">
+                                <i class="fas fa-angle-double-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="comment" class="comment" style="background: white">
+                        <div class="commentcontainer">
+                            
+                            
+                            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
@@ -960,80 +815,21 @@
 
 </script>
 
-                        
-                        
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div style="display: none;">
                         
                     </div>
                 </div>
+                <div class="col-md-2 col-lg-3">
                 </div>
-                <div class="col-md-1 col-lg-1"></div>
-                <div id="bg">
-                </div>
+            <div id="bg">
             </div>
-            
+        </div>
         
-        <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-</head>
-
-<body>
-    <div class="miniMode">
-        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
-        </meting-js>
-    </div>
-</body>
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-<script>
-    function aplayerInit() {
-        var aplayerid = "5kOzg11xVV#";
-        var aplayerserver = "kugou";
-        var aplayerorder = "default";
-        var aplayerautoplay = "true";
-        var aplayer = $("#myaplayer");
-        aplayer.attr("server", aplayerserver);
-        aplayer.attr("id", aplayerid);
-        aplayer.attr("order", aplayerorder);
-        if (aplayerautoplay == "true")
-            aplayer.attr("autoplay", "true");
-    }
-    aplayerInit();
-</script>
-
-<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-<script>
-    function aplayerbtnInit() {
-        var player = document.querySelectorAll('meting-js')[0].aplayer;
-        if(player==undefined)return false;
-        player.lrc.hide();
-        var mbabtn = $("#mbaplayer");
-        if (player.paused == false) {
-            mbabtn.removeClass("fa-play-circle-o");
-            mbabtn.addClass("fa-pause-circle");
-        } else {
-            mbabtn.addClass("fa-play-circle-o");
-            mbabtn.removeClass("fa-pause-circle");
-        }
-    }
-
-    function aplayerPlay() {
-        var player = document.querySelectorAll('meting-js')[0].aplayer;
-        var mbabtn = $("#mbaplayer");
-        if (player.paused == true) {
-            player.play();
-            mbabtn.removeClass("fa-play-circle-o");
-            mbabtn.addClass("fa-pause-circle");
-        } else {
-            player.pause();
-            mbabtn.addClass("fa-play-circle-o");
-            mbabtn.removeClass("fa-pause-circle");
-        }
-    }
-</script>
         
 
     </div>
@@ -1045,9 +841,9 @@
             </div>
         </div>
     </div>
-    <div id="bgchoice" style="display: none">link</div>
+    <div id="bgchoice" style="display: none"></div>
     
-    <div id="bgurl" style="display:none">https://ftp.bmp.ovh/imgs/2021/03/66e1034957dbb09d.jpg</div>
+    <div id="bgurl" style="display:none"></div>
     
     </div>
     <div id="landlord">
@@ -1058,16 +854,6 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-    var message_Path = '/live2d/'
-    var home_Path = document.getElementById("domainname").innerHTML+"/"; //此处修改为你的域名，必须带斜杠
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
-<script type="text/javascript" src="https://Technical-Support-1.github.io/media/live2d/js/message.js"></script>
-<script type="text/javascript">
-    loadlive2d("live2d", "https://Technical-Support-1.github.io/media/live2d/assets/tororo.model.json");
-</script>
 
 
 <script>
@@ -1083,5 +869,3 @@
             aplayerbtnInit();
         }
 </script>
-
-    <script src="https://Technical-Support-1.github.io/media/js/index.js"></script>
