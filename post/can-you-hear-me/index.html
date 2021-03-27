@@ -140,9 +140,6 @@ BBC.cn  is what?
         
         
           
-        <li><a data-pjax href="https://Technical-Support-1.github.io/friends">友链</a></li>
-
-        
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -210,12 +207,12 @@ BBC.cn  is what?
     
     
     <script>
-        let shareChoice = true
+        let shareChoice = false
     </script>
     
     
     <script>
-        let donateChoice = true
+        let donateChoice = false
     </script>
     
     
@@ -249,7 +246,7 @@ BBC.cn  is what?
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://Technical-Support-1.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616851190316" class="avatar">
+            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616851529149" class="avatar">
         </div>
         <div class="sitename">Technical Support——技术支持部门对外联络部</div>
         <span class="describtion" data-text='["“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！"]'>&nbsp;</span>
@@ -304,10 +301,6 @@ BBC.cn  is what?
     
     
     
-    
-    <div class="mchocie describtion">
-        <a data-pjax href="https://Technical-Support-1.github.io/friends" class="menubutton">友人帐</a>
-    </div>
     
     <hr>
     <style>
@@ -564,7 +557,7 @@ BBC.cn  is what?
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616851190316">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616851529149">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -577,7 +570,7 @@ BBC.cn  is what?
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616851190316">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616851529149">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -972,35 +965,6 @@ BBC.cn  is what?</p>
             </div>
             <hr style="width: 80%;">
             
-            <div class="sharebtnContainer">
-                <button type="button" class="sharebtn">转载分享</button>
-            </div>
-            <div class="shareContainer">
-                <div class="share" style="height:30px;background: white;">
-                    <a class="qq" href=""><i><img class="shareicon"
-                                src="https://Technical-Support-1.github.io/media/images/QQ.png" alt=""></i></a>
-                    <a class="wechat" href=""><i><img class="shareicon"
-                                src="https://Technical-Support-1.github.io/media/images/wechat.png" alt=""></i></a>
-                    <a class="weibo" href=""><i><img class="shareicon"
-                                src="https://Technical-Support-1.github.io/media/images/weibo.png" alt=""></i></a>
-                    <a class="qzone" href=""><i><img class="shareicon"
-                                src="https://Technical-Support-1.github.io/media/images/qzone.png" alt=""></i></a>
-                    <a class="douban" href=""><i><img class="shareicon"
-                                src="https://Technical-Support-1.github.io/media/images/douban.png" alt=""></i></a>
-                    <a class="facebook" href=""><i><img class="shareicon"
-                                src="https://Technical-Support-1.github.io/media/images/facebook.png" alt=""></i></a>
-                    <a class="twitter" href=""><i><img class="shareicon"
-                                src="https://Technical-Support-1.github.io/media/images/twitter.png" alt=""></i></a>
-                </div>
-            </div>
-            
-            
-            <div class="donateContainer">
-                <img src="https://Technical-Support-1.github.io/media/images/donate.png" alt="" class="donateImg">
-            </div>
-            <div class="donateContainer">
-                <img src="" alt="" class="donate">
-            </div>
             
             <div class="postfooter">
                 <ul class="post-copyright">
@@ -1110,6 +1074,69 @@ BBC.cn  is what?</p>
                 </div>
             </div>
             
+        
+        <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+</head>
+
+<body>
+    <div class="miniMode">
+        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
+        </meting-js>
+    </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+    function aplayerInit() {
+        var aplayerid = "1933476";
+        var aplayerserver = "kugou";
+        var aplayerorder = "default";
+        var aplayerautoplay = "false";
+        var aplayer = $("#myaplayer");
+        aplayer.attr("server", aplayerserver);
+        aplayer.attr("id", aplayerid);
+        aplayer.attr("order", aplayerorder);
+        if (aplayerautoplay == "true")
+            aplayer.attr("autoplay", "true");
+    }
+    aplayerInit();
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<script>
+    function aplayerbtnInit() {
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        if(player==undefined)return false;
+        player.lrc.hide();
+        var mbabtn = $("#mbaplayer");
+        if (player.paused == false) {
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        } else {
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+
+    function aplayerPlay() {
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        var mbabtn = $("#mbaplayer");
+        if (player.paused == true) {
+            player.play();
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        } else {
+            player.pause();
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+</script>
         
     </div>
     
