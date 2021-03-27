@@ -252,7 +252,7 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://Technical-Support-1.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616822717811" class="avatar">
+            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616823024861" class="avatar">
         </div>
         <div class="sitename">Technical Support——技术支持部门对外联络部</div>
         <span class="describtion" data-text='["“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！"]'>&nbsp;</span>
@@ -389,8 +389,8 @@
         var ptitle = $("#ptitle").html();
         var rootaddr = $("#rootaddr").html();
         pl = pl.replace(rootaddr, "");
-        var appid = '';
-        var appkey = '';
+        var appid = 'E6VsQqKeYCpFG86Xgjgj7j1z-MdYXbMMI';
+        var appkey = '1GvFFuOloimjYSpFSgky9COA';
         console.log(appid, appkey)
         if (AV == undefined)
             AV.init({
@@ -557,7 +557,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616822717811">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616823024861">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -570,7 +570,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616822717811">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616823024861">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -1076,30 +1076,53 @@
                     <div id="comment" class="comment" style="background: white">
                         <div class="commentcontainer">
                             
-                            
-                            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                            <style>
+    @media screen and (min-width: 1300px) {
+        .veditor::placeholder {
+            color: #b3b3b3;
+            font-size: 18px;
+            text-align: center;
+            line-height: 3rem;
+            font-family: kaiti;
+        }
+    }
+</style>
 
-<div id="gitalk-container"></div>
+<body>
+    <div id="vcomments">
+    </div>
+    <script src="https://Technical-Support-1.github.io/media/js/valine.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+        var valine = new Valine();
+        var curpath = window.location.pathname;
+        if (curpath[curpath.length - 1] != '/')
+            curpath += '/'
+        valine.init({
+            el: '#vcomments',
+            appId: 'E6VsQqKeYCpFG86Xgjgj7j1z-MdYXbMMI',
+            appKey: '1GvFFuOloimjYSpFSgky9COA',
+            notify: true,
+            verify: false,
+            avatar: 'retro',
+            pageSize: 10,
+            placeholder: '既然来了，何不畅所欲言呢？',
+            visitor: true, // 阅读量统计
+            recordIP: true,
+            path: curpath //[重点] 记得添加path路径
+        });
+    </script>
+    <script type="text/javascript">
+        var jrsc = '既然来了，何不畅所欲言呢？';
+        jinrishici.load(function (result) {
+            // 自己的处理逻辑
+            jrsc = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+                .dynasty + " · " + result.data.origin.author;
+        });
+    </script>
 
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '5a1007848cf31dca8b52',
-    clientSecret: 'ab14792f01685ff3a71e175cf002eb33710c5bf1',
-    repo: 'Technical-Support-1.github.io',
-    owner: 'Technical-Support-1',
-    admin: ['Technical-Support-1'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-                            
-                            
+</body>
+                            <div class="clear"></div>
                             
                         </div>
                     </div>
