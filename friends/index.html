@@ -85,7 +85,7 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://Technical-Support-1.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616892564926" class="avatar">
+            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1616892961452" class="avatar">
         </div>
         <div class="sitename">Technical Support——技术支持部门对外联络部</div>
         <span class="describtion" data-text='["“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！"]'>&nbsp;</span>
@@ -140,6 +140,10 @@
     
     
     
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="https://Technical-Support-1.github.io/friends" class="menubutton">友人帐</a>
+    </div>
     
     <hr>
     <style>
@@ -396,7 +400,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616892564926">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616892961452">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -409,7 +413,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616892564926">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1616892961452">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -851,6 +855,9 @@
         
         
           
+        <li><a data-pjax href="https://Technical-Support-1.github.io/friends">友链</a></li>
+
+        
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -901,9 +908,30 @@
                     <body>
     <div id="friendscontainermobile">
         
+        
+        <div class="friend-box" onclick="window.location.href= '';return false">
+            <img class="friend-avatar" src="">
+            <div class="flink-info">
+                <a href="" class="title" target="_blank"></a>
+                <div style="margin-top:10px"></div>
+                <p></p>
+            </div>
+        </div>
+        
+        
     </div>
 
     <div id="friendscontainer">
+        
+        
+        <div class="background" onclick="window.open('');return false">
+            <div class="infoForm">
+                <img class="favatar" src="">
+                <h2></h2>
+                <h3></h3>
+            </div>
+        </div>
+        
         
     </div>
 </body>
