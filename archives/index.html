@@ -48,12 +48,12 @@
     
     
     <script>
-        let shareChoice = true
+        let shareChoice = false
     </script>
     
     
     <script>
-        let donateChoice = true
+        let donateChoice = false
     </script>
     
     
@@ -87,7 +87,7 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://Technical-Support-1.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1617603444066" class="avatar">
+            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1617603618266" class="avatar">
         </div>
         <div class="sitename">Technical Support——技术支持部门对外联络部</div>
         <span class="describtion" data-text='["“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！"]'>&nbsp;</span>
@@ -142,6 +142,10 @@
     
     
     
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="https://Technical-Support-1.github.io/friends" class="menubutton">友人帐</a>
+    </div>
     
     <hr>
     <style>
@@ -398,7 +402,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1617603444066">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1617603618266">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -411,7 +415,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1617603444066">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1617603618266">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -863,6 +867,9 @@
         
         
           
+        <li><a data-pjax href="https://Technical-Support-1.github.io/friends">友链</a></li>
+
+        
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
