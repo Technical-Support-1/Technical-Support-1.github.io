@@ -210,12 +210,12 @@ BBC.cn  is what?
     
     
     <script>
-        let shareChoice = false
+        let shareChoice = true
     </script>
     
     
     <script>
-        let donateChoice = false
+        let donateChoice = true
     </script>
     
     
@@ -249,7 +249,7 @@ BBC.cn  is what?
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://Technical-Support-1.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1617596476194" class="avatar">
+            <img src="https://Technical-Support-1.github.io/images/avatar.png?v=1617600956410" class="avatar">
         </div>
         <div class="sitename">Technical Support——技术支持部门对外联络部</div>
         <span class="describtion" data-text='["“知识整理活动”已经开始，欢迎通过右上“更多”—“关于”加入我们！"]'>&nbsp;</span>
@@ -564,7 +564,7 @@ BBC.cn  is what?
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1617596476194">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1617600956410">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -577,7 +577,7 @@ BBC.cn  is what?
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1617596476194">\
+                        <img class="intro1" src="https://Technical-Support-1.github.io/images/avatar.png?v=1617600956410">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -972,6 +972,35 @@ BBC.cn  is what?</p>
             </div>
             <hr style="width: 80%;">
             
+            <div class="sharebtnContainer">
+                <button type="button" class="sharebtn">转载分享</button>
+            </div>
+            <div class="shareContainer">
+                <div class="share" style="height:30px;background: white;">
+                    <a class="qq" href=""><i><img class="shareicon"
+                                src="https://Technical-Support-1.github.io/media/images/QQ.png" alt=""></i></a>
+                    <a class="wechat" href=""><i><img class="shareicon"
+                                src="https://Technical-Support-1.github.io/media/images/wechat.png" alt=""></i></a>
+                    <a class="weibo" href=""><i><img class="shareicon"
+                                src="https://Technical-Support-1.github.io/media/images/weibo.png" alt=""></i></a>
+                    <a class="qzone" href=""><i><img class="shareicon"
+                                src="https://Technical-Support-1.github.io/media/images/qzone.png" alt=""></i></a>
+                    <a class="douban" href=""><i><img class="shareicon"
+                                src="https://Technical-Support-1.github.io/media/images/douban.png" alt=""></i></a>
+                    <a class="facebook" href=""><i><img class="shareicon"
+                                src="https://Technical-Support-1.github.io/media/images/facebook.png" alt=""></i></a>
+                    <a class="twitter" href=""><i><img class="shareicon"
+                                src="https://Technical-Support-1.github.io/media/images/twitter.png" alt=""></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="donateContainer">
+                <img src="https://Technical-Support-1.github.io/media/images/donate.png" alt="" class="donateImg">
+            </div>
+            <div class="donateContainer">
+                <img src="" alt="" class="donate">
+            </div>
             
             <div class="postfooter">
                 <ul class="post-copyright">
