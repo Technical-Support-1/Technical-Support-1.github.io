@@ -2345,6 +2345,10 @@ a {
   }
 }
 
+      .posttitlewithoutimg {
+        color: #212529;
+      }
+    
         .describtion {
           color: #f8f9fa;
         }
