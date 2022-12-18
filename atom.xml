@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://Technical-Support-1.github.io</id>
+    <title>Technical Support——技术支持部门对外联络部</title>
+    <updated>2022-12-18T13:09:09.365Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://Technical-Support-1.github.io"/>
+    <link rel="self" href="https://Technical-Support-1.github.io/atom.xml"/>
+    <subtitle>“知识整理活动”已经开始，欢迎通过下方“关于”加入我们！</subtitle>
+    <logo>https://Technical-Support-1.github.io/images/avatar.png</logo>
+    <icon>https://Technical-Support-1.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Technical Support——技术支持部门对外联络部</rights>
+    <entry>
+        <title type="html"><![CDATA[Python项目——学生成绩管理系统]]></title>
+        <id>https://Technical-Support-1.github.io/post/python-xiang-mu-xue-sheng-cheng-ji-guan-li-xi-tong/</id>
+        <link href="https://Technical-Support-1.github.io/post/python-xiang-mu-xue-sheng-cheng-ji-guan-li-xi-tong/">
+        </link>
+        <updated>2021-05-16T10:57:49.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="关于">关于</h1>
+<p>这是我们开发的第一个成熟项目，请多多提出建议！</p>
+<p>代码行数：280行左右（2021.5.28）</p>
+<p>项目源码：Github地址:https://github.com/Technical-Support-1/The-student-achievement-control-system</p>
+<p>国内gitee地址：https://gitee.com/technical-support-1/The-student-achievement-control-system</p>
+<h1 id="使用指南">使用指南</h1>
+<p>这是一个用于快速管理学生成绩的管理系统，其数据从Excel表格(.xls或.xlsx)导入，要求见下图</p>
+<figure data-type="image" tabindex="1"><img src="https://Technical-Support-1.github.io/post-images/1621328670735.png" alt="" loading="lazy"></figure>
+<p>请使用Python3.6及以上版本运行</p>
+<p>使用指南已内嵌在程序中，请仔细阅读。</p>
+<p>有问题请先自行排查问题，遇到解决不了问题再到Issues中反馈</p>
+<p>有改进的建议可以通过邮箱(wikidot-cn@outlook.com)或Issues留言，我会定期更新程序</p>
+<p>祝使用愉快！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一些有趣的问题]]></title>
+        <id>https://Technical-Support-1.github.io/post/yi-xie-you-qu-de-wen-ti/</id>
+        <link href="https://Technical-Support-1.github.io/post/yi-xie-you-qu-de-wen-ti/">
+        </link>
+        <updated>2021-04-17T13:42:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>集思广益</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>集思广益</p>
+<!-- more -->
+<p><strong>提醒</strong>:这是一些并非被列入紧急事项的问题，其涵盖多方面的领域，且某些问题极为[数据删除]。如果你对其中的一些问题有自己独特的办法，欢迎在评论区留言或联系wikidot-cn@outlook.com，我们会在鸣谢中提到你的名字。</p>
+<h2 id="对其余个体模因部的调查和研究">对其余个体模因部的调查和研究</h2>
+<h2 id="python列表重难点">Python列表重难点</h2>
+<h2 id="隐私的过度侵犯导致自由被干涉某种情况下改朝换代的可能性降低">隐私的过度侵犯导致自由被干涉（某种情况下改朝换代的可能性降低）</h2>
+<h2 id="垄断与反垄断对世界的影响">垄断与反垄断对世界的影响</h2>
+<h2 id="游戏原本的意义与发展">游戏原本的意义与发展</h2>
+<h2 id="广告如今的成因与价值">广告如今的成因与价值</h2>
+<h2 id="游戏于人的价值">游戏于人的价值</h2>
+<p>等我想起来再写</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://Technical-Support-1.github.io/post/about/</id>
+        <link href="https://Technical-Support-1.github.io/post/about/">
+        </link>
+        <updated>2021-03-20T11:09:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>关于我们</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>关于我们</p>
+<!-- more -->
+<blockquote>
+<p><em>黑月是否嚎叫？——仅在月亏之时。</em></p>
+</blockquote>
+<h2 id="关于该站点">🏠 关于该站点</h2>
+<p>欢迎来到Technical Support网络站点，我是网络站点负责人，Dr.Writer。我们会在该网站<em>不</em>定期更新Technical Support的成果和工程进度。我们的研究范围较为广泛，包括但不限于物理学、电脑硬件、化学、医学、经济、政治、C、Python、世博会上海企业联合馆（Shanghai Corporate Pavilion）、逻辑学、PR、PS、AE、AU、SAI、电影分析、GOI、军事、游戏、UTAU、FL Studio、Vegas、live2D、VUP、模因支持、紧急帮助、科普等领域。我们在其中的一些方面大有建树，但某些方面却仍在计划当中。但我们坚信，在时间和人手变得充裕之后，这些空缺的领域将会被填补。<br>
+<strong>我们的宗旨：分析、研究、探索</strong><br>
+<strong>我们的职责：为其他部门提供技术支持，为数据库添砖加瓦</strong></p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>请记住，我们是一个<em>团队</em>，而我只是网络站点负责人而已。我们是一个100-300人的团队，人数随时间变化。某种意义上说，我们没有<em>管理员</em>，这里的成员只有资历之称，而我只是一个擅长与文章和互联网打交道的人。</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>对那堆[已编辑]的数据进行处理和分析，依托互联网查找数据<br>
+由于[数据删除]，具体的个人信息被抹除，您可以发邮件询问（<strong>注意：我们有权不回复您关于这方面的问题</strong>）</p>
+<h2 id="加入我们">📬 加入我们</h2>
+<p>您可以联系wikidot-cn@outlook.com来获得我们的入职方式，您无需发送简历，只需留下您的个人信息和擅长的领域，我们的工作人员会尽快联系您并提供具体信息。如果您对该网站有任何疑问和建议，也可以发送邮件进行询问。<br>
+<strong>注意:回答时间不固定，请不要催促，如果7个工作日后还没有回复，再发邮件进行催促</strong><br>
+<strong>请不要发垃圾邮件，感谢配合！</strong></p>
+<h2 id="图片版权">图片版权</h2>
+<p>网站标题图片选自SCP基金会的MTF页面（http://scp-wiki-cn.wikidot.com/task-forces#toc31）作者未知，如有知道者请向邮箱发送邮件告知。该图片遵循CC-BY-SA 3.0协议。<br>
+本站文章及其衍生物均遵循CC-BY-SA 3.0协议，<strong>但建议在转载时向wikidot-cn@outlook.com发邮件告知转载网站，转载人和转载时间</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Can you hear me?]]></title>
+        <id>https://Technical-Support-1.github.io/post/can-you-hear-me/</id>
+        <link href="https://Technical-Support-1.github.io/post/can-you-hear-me/">
+        </link>
+        <updated>2021-03-19T15:31:54.000Z</updated>
+        <content type="html"><![CDATA[<p>Can you hear me?<br>
+Hello,World!I'm coming!<br>
+BBC.cn  is what?</p>
+]]></content>
+    </entry>
+</feed>
